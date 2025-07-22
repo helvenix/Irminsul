@@ -1,13 +1,21 @@
 "use client"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react";
+import Autoplay from "embla-carousel-autoplay";
 
-import { Button } from "../ui/button"
+import { Button } from "@/components/ui/button"
 import { 
     Avatar, 
     AvatarFallback, 
     AvatarImage 
-} from "../ui/avatar"
+} from "@/components/ui/avatar"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 import {
     LayoutDashboard,
@@ -52,14 +60,43 @@ export function LeftSidebar(){
                 <Button variant='ghost' className="rounded-none size-12 border-b-2 border-accent"><Settings /></Button>
                 {/* <Button variant='ghostDestructive' className="rounded-none size-12 border-b-2 border-accent dark:hover:border-destructive/75"><LogOut /></Button> */}
             </div>
-            <div className="w-48 h-48 grid relative">
-                <Flame size='124' strokeWidth="0.5" className="text-accent absolute top-4 left-8.5"/>
-                <span className="absolute w-10 top-23 left-20 text-accent font-bold text-xl text-center">10</span>
-                <span className="w-48 text-center absolute top-38 text-xs">
-                    <span className="text-accent-foreground font-bold">17 days </span> 
-                    of unbroken focus
-                </span>
-            </div>
+            <Carousel 
+                className="w-48 h-48 grid" 
+                plugins={[
+                    Autoplay({
+                        delay: 4000,
+                    }),
+                ]}
+            >
+                <CarouselContent>
+                    <CarouselItem className="relative">
+                        <Flame size='124' strokeWidth="0.5" className="text-accent absolute top-4 left-12.5"/>
+                        <span className="absolute w-10 top-23 left-24 text-accent font-bold text-xl text-center">10</span>
+                        <span className="w-48 text-center absolute top-38 text-xs">
+                            <span className="text-accent-foreground font-bold">10 days </span> 
+                            of unbroken focus
+                        </span>
+                    </CarouselItem>
+                    <CarouselItem className="relative">
+                        <Flame size='124' strokeWidth="0.5" className="text-accent absolute top-4 left-12.5"/>
+                        <span className="absolute w-10 top-23 left-24 text-accent font-bold text-xl text-center">10</span>
+                        <span className="w-48 text-center absolute top-38 text-xs">
+                            <span className="text-accent-foreground font-bold">10 days </span> 
+                            of unbroken focus
+                        </span>
+                    </CarouselItem>
+                    <CarouselItem className="relative">
+                        <Flame size='124' strokeWidth="0.5" className="text-accent absolute top-4 left-12.5"/>
+                        <span className="absolute w-10 top-23 left-24 text-accent font-bold text-xl text-center">10</span>
+                        <span className="w-48 text-center absolute top-38 text-xs">
+                            <span className="text-accent-foreground font-bold">10 days </span> 
+                            of unbroken focus
+                        </span>
+                    </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2"/>
+            </Carousel>
             <div className="w-48 flex relative">
                 <Button variant='ghost' className="rounded-none size-12 w-48 border-t-2 border-accent text-left">
                     <Avatar className="absolute top-2 left-3 rounded-md">
