@@ -22,3 +22,11 @@ export default function RootLayout({
         </html>
     );
 }
+/*
+Let's sum out a little bit, So 
+
+On top middle there's hero canvas
+On middle there's main functionality screen
+On bottom middle there's navigation
+On left side there's 
+*/
