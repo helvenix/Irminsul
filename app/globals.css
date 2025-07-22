@@ -25,6 +25,7 @@
     --color-input: var(--input);
     --color-border: var(--border);
     --color-destructive: var(--destructive);
+    --color-affirmative: var(--affirmative);
     --color-accent-foreground: var(--accent-foreground);
     --color-accent: var(--accent);
     --color-muted-foreground: var(--muted-foreground);
@@ -78,7 +79,7 @@
     /* Destructive & Affirmative */
     --destructive: oklch(57% 0.245 27.325); /* Keep original vivid red tone */
     --destructive-foreground: oklch(98% 0 0);
-    --affirmative: oklch(60% 0.22 155);  /* Vibrant green as a complement */
+    --affirmative: oklch(58% 0.16 155);
     --affirmative-foreground: oklch(98% 0 0);
 
     /* Chart Colors (Adjusted to harmonize with primary palette) */
@@ -114,7 +115,7 @@
 
     /* Accent Colors */
     --accent: oklch(58.62% 0.206 309.94);
-    --accent-foreground: oklch(15% 0.01 309);
+    --accent-foreground: oklch(94% 0.015 309);
 
     /* Neutral & Supportive Colors */
     --card: oklch(20% 0.02 246.5);
@@ -132,8 +133,8 @@
     /* Destructive & Affirmative */
     --destructive: oklch(70% 0.19 22.216); 
     --destructive-foreground: oklch(12% 0.01 22);
-    --affirmative: oklch(65% 0.20 150); 
-    --affirmative-foreground: oklch(12% 0.01 150);
+    --affirmative: oklch(68% 0.14 155);
+    --affirmative-foreground: oklch(15% 0.01 155);
 
     /* Chart Colors (Adjusted for dark theme harmony) */
     --chart-1: oklch(50% 0.18 245);  /* Cool blue */
