@@ -73,7 +73,7 @@ export function LeftSidebar(){
                         <Flame size='124' strokeWidth="0.5" className="text-accent absolute top-4 left-12.5"/>
                         <span className="absolute w-10 top-23 left-24 text-accent font-bold text-xl text-center">10</span>
                         <span className="w-48 text-center absolute top-38 text-xs">
-                            <span className="text-accent-foreground font-bold">10 days </span> 
+                            <span className="text-foreground dark:text-accent-foreground font-bold">10 days </span> 
                             of unbroken focus
                         </span>
                     </CarouselItem>
@@ -81,7 +81,7 @@ export function LeftSidebar(){
                         <Flame size='124' strokeWidth="0.5" className="text-accent absolute top-4 left-12.5"/>
                         <span className="absolute w-10 top-23 left-24 text-accent font-bold text-xl text-center">10</span>
                         <span className="w-48 text-center absolute top-38 text-xs">
-                            <span className="text-accent-foreground font-bold">10 days </span> 
+                            <span className="text-foreground dark:text-accent-foreground font-bold">10 days </span> 
                             of unbroken focus
                         </span>
                     </CarouselItem>
@@ -89,7 +89,7 @@ export function LeftSidebar(){
                         <Flame size='124' strokeWidth="0.5" className="text-accent absolute top-4 left-12.5"/>
                         <span className="absolute w-10 top-23 left-24 text-accent font-bold text-xl text-center">10</span>
                         <span className="w-48 text-center absolute top-38 text-xs">
-                            <span className="text-accent-foreground font-bold">10 days </span> 
+                            <span className="text-foreground dark:text-accent-foreground font-bold">10 days </span> 
                             of unbroken focus
                         </span>
                     </CarouselItem>
@@ -98,13 +98,13 @@ export function LeftSidebar(){
                 <CarouselNext className="right-2"/>
             </Carousel>
             <div className="w-48 flex relative">
-                <Button variant='ghost' className="rounded-none size-12 w-48 border-t-2 border-accent text-left">
+                <Button variant='ghost' className="rounded-none size-12 w-48 border-t-2 border-accent text-left group">
                     <Avatar className="absolute top-2 left-3 rounded-md">
                         <AvatarImage src="" />
                         <AvatarFallback><User className="size-4"/></AvatarFallback>
                     </Avatar>
                     <h1 className="absolute w-33 text-md top-2 left-15 truncate">{"Helven"}</h1>
-                    <h2 className="absolute text-xs text-muted-foreground top-6.5 left-15">UID : {String("1").padStart(4, "0")}</h2>
+                    <h2 className="absolute text-xs text-muted-foreground group-hover:text-muted top-6.5 left-15">UID : {String("1").padStart(4, "0")}</h2>
                 </Button>
             </div>
         </div>
