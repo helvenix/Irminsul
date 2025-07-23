@@ -13,6 +13,9 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>){
     return (
         <html lang="en" suppressHydrationWarning>
+            <head>
+                <link rel="icon" href="Irminsul Light.png" />
+            </head>
             <body className={`antialiased`}>
                 <ThemeProvider
                     attribute="class"
