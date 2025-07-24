@@ -23,8 +23,8 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <LeftSidebar />
                     <main className="w-screen h-screen">{children}</main>
+                    <LeftSidebar />
                 </ThemeProvider>
             </body>
         </html>
