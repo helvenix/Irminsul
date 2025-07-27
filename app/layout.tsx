@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import { ThemeProvider } from "@/components/Others/theme-provider"
-import { LeftSidebar } from "@/components/Layout/left-sidebar";
 
 import "./globals.css";
 
@@ -24,7 +23,6 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
                     disableTransitionOnChange
                 >
                     <main className="w-screen h-screen">{children}</main>
-                    <LeftSidebar />
                 </ThemeProvider>
             </body>
         </html>
