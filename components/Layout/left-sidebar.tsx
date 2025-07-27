@@ -49,9 +49,9 @@ export function LeftSidebar(){
             </div> */}
             <div className="fixed top-[36vh] grid">
                 <div className="w-48 flex">
-                    <Button variant='ghost' className="rounded-none size-12 border-b-2 border-accent"><LayoutDashboard /></Button>
-                    <Button variant='ghost' className="rounded-none size-12 border-b-2 border-accent"><Award /></Button>
-                    <Button variant='ghost' className="rounded-none size-12 border-b-2 border-accent"
+                    <Button variant='ghost' className="rounded-none size-12 border-b-2 border-primary"><LayoutDashboard /></Button>
+                    <Button variant='ghost' className="rounded-none size-12 border-b-2 border-primary"><Award /></Button>
+                    <Button variant='ghost' className="rounded-none size-12 border-b-2 border-primary"
                         onClick={() => {theme === 'light' ? setTheme("dark") : setTheme("light")}}
                     >
                         {theme === 'light' && (
@@ -61,8 +61,8 @@ export function LeftSidebar(){
                             <Moon />
                         )}
                     </Button>
-                    <Button variant='ghost' className="rounded-none size-12 border-b-2 border-accent"><Settings /></Button>
-                    {/* <Button variant='ghostDestructive' className="rounded-none size-12 border-b-2 border-accent dark:hover:border-destructive/75"><LogOut /></Button> */}
+                    <Button variant='ghost' className="rounded-none size-12 border-b-2 border-primary"><Settings /></Button>
+                    {/* <Button variant='ghostDestructive' className="rounded-none size-12 border-b-2 border-primary dark:hover:border-destructive/75"><LogOut /></Button> */}
                 </div>
                 <Carousel 
                     className="w-48 h-48 grid" 
@@ -74,26 +74,26 @@ export function LeftSidebar(){
                 >
                     <CarouselContent>
                         <CarouselItem className="relative">
-                            <Flame size='124' strokeWidth="0.5" className="text-accent absolute top-4 left-12.5"/>
-                            <span className="absolute w-10 top-23 left-24 text-accent font-bold text-xl text-center">10</span>
+                            <Flame size='124' strokeWidth="0.5" className="text-primary absolute top-4 left-12.5"/>
+                            <span className="absolute w-10 top-23 left-24 text-primary font-bold text-xl text-center">10</span>
                             <span className="w-48 text-center absolute top-38 text-xs">
-                                <span className="text-foreground dark:text-accent-foreground font-bold">10 days </span> 
+                                <span className="text-foreground dark:text-primary-foreground font-bold">10 days </span> 
                                 of unbroken focus
                             </span>
                         </CarouselItem>
                         <CarouselItem className="relative">
-                            <Flame size='124' strokeWidth="0.5" className="text-accent absolute top-4 left-12.5"/>
-                            <span className="absolute w-10 top-23 left-24 text-accent font-bold text-xl text-center">10</span>
+                            <Flame size='124' strokeWidth="0.5" className="text-primary absolute top-4 left-12.5"/>
+                            <span className="absolute w-10 top-23 left-24 text-primary font-bold text-xl text-center">10</span>
                             <span className="w-48 text-center absolute top-38 text-xs">
-                                <span className="text-foreground dark:text-accent-foreground font-bold">10 days </span> 
+                                <span className="text-foreground dark:text-primary-foreground font-bold">10 days </span> 
                                 of unbroken focus
                             </span>
                         </CarouselItem>
                         <CarouselItem className="relative">
-                            <Flame size='124' strokeWidth="0.5" className="text-accent absolute top-4 left-12.5"/>
-                            <span className="absolute w-10 top-23 left-24 text-accent font-bold text-xl text-center">10</span>
+                            <Flame size='124' strokeWidth="0.5" className="text-primary absolute top-4 left-12.5"/>
+                            <span className="absolute w-10 top-23 left-24 text-primary font-bold text-xl text-center">10</span>
                             <span className="w-48 text-center absolute top-38 text-xs">
-                                <span className="text-foreground dark:text-accent-foreground font-bold">10 days </span> 
+                                <span className="text-foreground dark:text-primary-foreground font-bold">10 days </span> 
                                 of unbroken focus
                             </span>
                         </CarouselItem>
@@ -102,7 +102,7 @@ export function LeftSidebar(){
                     <CarouselNext className="right-2"/>
                 </Carousel>
                 <div className="w-48 flex relative">
-                    <Button variant='ghost' className="rounded-none size-12 w-48 border-t-2 border-accent text-left group">
+                    <Button variant='ghost' className="rounded-none size-12 w-48 border-t-2 border-primary text-left group">
                         <Avatar className="absolute top-2 left-3 rounded-md">
                             <AvatarImage src="" />
                             <AvatarFallback><User className="size-4"/></AvatarFallback>

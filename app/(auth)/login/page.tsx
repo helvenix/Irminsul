@@ -17,7 +17,7 @@ import { toast } from "sonner";
 import Link from "next/link"
 
 const loginSchema = z.object({
-    email: z.string().min(1, { message: "email required" }),
+    email: z.email().min(1, { message: "email required" }),
     password: z.string().min(1, { message: "Password required" }),
 });
 
